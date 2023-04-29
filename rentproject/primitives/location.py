@@ -32,6 +32,5 @@ class Property(BaseModel):
     accessible: bool
     roommates: bool
     coed: bool
+    photo: list[str]
     gender_restricted: Gender | None = None
-
-
