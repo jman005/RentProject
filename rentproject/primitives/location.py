@@ -23,7 +23,8 @@ class Location(BaseModel):
 
 class Property(BaseModel):
     type: HousingType
-    cost: int # Daily for Accomodation, Monthly for rent/sublet, overall for Condo
+    cost_low: int # Daily for Accomodation, Monthly for rent/sublet, overall for Condo
+    cost_high: int
     location: Location
     bedrooms: int
     bathrooms: int
