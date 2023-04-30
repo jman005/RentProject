@@ -14,7 +14,7 @@ db = client["main"]
 users = db["Users"]
 
 def get_user(user_id: str) -> User:
-    user_data = users.find({"user_id": user_id})
+    user_data = users.find_one({"username": user_id})
     return parse_obj_as(User, user_data)
 
 
