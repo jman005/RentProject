@@ -1,10 +1,10 @@
-from fastapi import APIRouter, Form
+from fastapi import APIRouter, Form, HTTPException
 import hashlib
 import json
 from pydantic.tools import parse_obj_as
 from pymongo import MongoClient
 import os
-from typing import Annotated
+from typing import Annotated, Union
 from rentproject.primitives.user import User
 
 router = APIRouter()
@@ -13,13 +13,18 @@ client = MongoClient(os.environ["RentProjectMongo"])
 db = client["main"]
 users = db["Users"]
 
-def get_user(user_id: str) -> User:
+def get_user(user_id: str) -> Union[User, None]:
     user_data = users.find_one({"username": user_id})
+    if not user_data:
+        return None
     return parse_obj_as(User, user_data)
 
 
 @router.post("/create_user")
 def create_user(user_data: User):
+    is_user = get_user(user_data.username)
+    if is_user:
+        raise HTTPException(status_code=403, detail="Username taken")
     hashword = hashlib.sha256()
     hashword.update(user_data.password.encode())
     user_data.password = hashword.hexdigest()
