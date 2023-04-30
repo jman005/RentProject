@@ -1,13 +1,13 @@
 
 <h1 align="center">
   <br>
-  <a href="https://r4r.tech/"><img src="logo.PNG" alt="Rentals 4 Real" width="200"></a>
+  <a href="https://r4r.tech/"><img src="assets/logo.PNG" alt="Rentals 4 Real" width="200"></a>
   <br>
   Rentals 4 Real
   <br>
 </h1>
 
-<h4 align="center"> <br>The realtor that searches for you. 
+<h4 align="center"> <br>The realtor that searches for you. </h4>
 
 <p align="center">
   <br>
@@ -49,9 +49,9 @@ INSERT EXPLANATION
 
 We would like to extend our gratitude to the sponsors of Deerhacks 2023, for supporting us in bringing this project back to life.
 
-<a href="https://www.twilio.com/"><img src="twiliologo.png" alt="Twilio" width="200"></a>
+<a href="https://www.twilio.com/"><img src="assets/twiliologo.png" alt="Twilio" width="200"></a>
 
-<a href="https://www.domain.com/mlh"><img src="domainlogo.png" alt="Domain.Com" width="200"></a>
+<a href="https://www.domain.com/mlh"><img src="assets/domainlogo.png" alt="Domain.Com" width="200"></a>
 
 
 ## Credits
