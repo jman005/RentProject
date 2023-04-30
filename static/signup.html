@@ -37,14 +37,18 @@
             }
             Object.keys(obj.location).forEach(key => delete obj[key])
             console.log(obj)
-            await fetch('create_user',{
+            const res = await fetch('create_user',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
                 },
                 body: JSON.stringify(obj)
             });
-            return false
+            if (res.ok) {
+                window.location.href = 'dashboard.html'
+            } else {
+                alert('Error creating user, please check your inputs.')
+            }
         }
     </script>
 </head>
