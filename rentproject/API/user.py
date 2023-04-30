@@ -51,4 +51,3 @@ def create_user(username: str, password: str):
     hashword.update(password.encode())
     if hashword.hexdigest() != user.password:
         raise HTTPException(status_code=403, detail="Incorrect Password")
-    return 200
