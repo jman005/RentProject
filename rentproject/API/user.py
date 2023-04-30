@@ -13,14 +13,11 @@ users = db["Users"]
 
 
 @router.post("/create_user")
-def create_user(user_id: str, user_password: str, user_data: User):
+def create_user(user_data: User):
     hashword = hashlib.sha256()
-    hashword.update(user_password.encode())
-    users.insert_one({
-        "user_id": user_id,
-        "user_password": hashword.hexdigest(),
-        "user_data": json.loads(user_data.json())
-    })
+    hashword.update(user_data.password.encode())
+    user_data.password = hashword
+    users.insert_one(json.loads(user_data.json()))
 
 @router.post("/update_user")
 def update_user(user_id: str, user_password: str, user_data: User):

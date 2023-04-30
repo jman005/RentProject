@@ -14,5 +14,4 @@ properties = db["Properties"]
 
 @router.get("/search")
 def search(property: Property) -> list[User]:
-
     pass
