@@ -8,12 +8,15 @@ User JSON format:
 '''
 
 class User(BaseModel):
+    username: str
+    password: str
     gender: Gender
     type: HousingType = Field(description="1 for condo, 2 for rent, 3 for sublet, 4 for accomodation")
     cost: int  # Daily for Accomodation, Monthly for rent/sublet, overall for Condo
     location: Location
     bedrooms: int
     bathrooms: int
+    radius: int
     sqft: int
     accessible: bool
     roommates: bool

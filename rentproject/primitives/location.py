@@ -13,13 +13,13 @@ class HousingType(Enum):
     ACCOMODATION: 4
 
 class Location(BaseModel):
-    longitude: int = 0.0
-    latitude: int = 0.0
+    longitude: float = 0.0
+    latitude: float = 0.0
     line1: str = ""
-    postal: str = ""
+    postal: str | None
     city: str = ""
     province: str = ""
-    line2: str = ""
+    line2: str | None
 
 class Property(BaseModel):
     type: HousingType
@@ -28,9 +28,9 @@ class Property(BaseModel):
     location: Location
     bedrooms: int
     bathrooms: int
-    sqft: int
-    accessible: bool
-    roommates: bool
-    coed: bool
-    photo: list[str]
+    sqft: int | None
+    accessible: bool | None
+    roommates: bool | None
+    coed: bool | None
+    images: list[str] | None
     gender_restricted: Gender | None = None
