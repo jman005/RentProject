@@ -124,7 +124,7 @@ form h5 {
 
 .landing {
     text-align: center;
-    height: 80vh;
+    height: 76vh;
     padding: 5% 0px;
 }
 
@@ -147,7 +147,7 @@ i {
     margin-left: 20px;
 }
 
-login_container {
+.login_container {
     height: 76vh;
 }
 
