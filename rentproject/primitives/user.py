@@ -21,3 +21,7 @@ class User(BaseModel):
     accessible: bool
     roommates: bool
     coed: bool
+
+class UserLogin(BaseModel):
+    username: str
+    password: str

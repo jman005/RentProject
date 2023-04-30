@@ -5,7 +5,7 @@ from pydantic.tools import parse_obj_as
 from pymongo import MongoClient
 import os
 from typing import Annotated, Union
-from rentproject.primitives.user import User
+from rentproject.primitives.user import User, UserLogin
 
 router = APIRouter()
 
@@ -43,11 +43,11 @@ def update_user(user_id: str, user_password: str, user_data: User):
 
 
 @router.post("/login")
-def create_user(username: str, password: str):
-    user = get_user(username)
+def create_user(user_data: UserLogin):
+    user = get_user(user_data.username)
     if not user:
         raise HTTPException(status_code=404, detail="Unknown Username")
     hashword = hashlib.sha256()
-    hashword.update(password.encode())
+    hashword.update(user_data.password.encode())
     if hashword.hexdigest() != user.password:
         raise HTTPException(status_code=403, detail="Incorrect Password")
