@@ -2,12 +2,12 @@ from fastapi import APIRouter
 import hashlib
 import json
 from pymongo import MongoClient
-import keyring
+import os
 from rentproject.primitives.user import User
 
 router = APIRouter()
 
-client = MongoClient(keyring.get_password("RentProject", "Mongo"))
+client = MongoClient(os.environ["RentProjectMongo"])
 db = client["main"]
 users = db["Users"]
 
