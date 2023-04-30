@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Form
 import hashlib
 import json
+from pydantic.tools import parse_obj_as
 from pymongo import MongoClient
 import os
 from typing import Annotated
@@ -12,9 +13,13 @@ client = MongoClient(os.environ["RentProjectMongo"])
 db = client["main"]
 users = db["Users"]
 
+def get_user(user_id: str) -> User:
+    user_data = users.find({"user_id": user_id})
+    return parse_obj_as(User, user_data)
+
 
 @router.post("/create_user")
-def create_user(user_data: Annotated[User, Form()]):
+def create_user(user_data: User):
     hashword = hashlib.sha256()
     hashword.update(user_data.password.encode())
     user_data.password = hashword
@@ -30,8 +35,3 @@ def update_user(user_id: str, user_password: str, user_data: User):
         "user_password": hashword.hexdigest(),
         "user_data": json.loads(user_data.json())
     })
-
-def get_user(user_id: str, user_password: str) -> User:
-    hashword = hashlib.sha256()
-    hashword.update(user_password.encode())
-    user = users.find({"user_id": user_id})
