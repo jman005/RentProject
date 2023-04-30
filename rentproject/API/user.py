@@ -1,8 +1,9 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Form
 import hashlib
 import json
 from pymongo import MongoClient
 import os
+from typing import Annotated
 from rentproject.primitives.user import User
 
 router = APIRouter()
@@ -13,7 +14,7 @@ users = db["Users"]
 
 
 @router.post("/create_user")
-def create_user(user_data: User):
+def create_user(user_data: Annotated[User, Form()]):
     hashword = hashlib.sha256()
     hashword.update(user_data.password.encode())
     user_data.password = hashword
