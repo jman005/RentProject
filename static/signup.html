@@ -19,13 +19,13 @@
                 </ul>
             </nav>
     </header>
-    <form action="/create_user" method="post">
+    <form onsubmit="localStorage.setItem('username', document.getElementById('username').value)" action="/create_user" method="post">
         <h2>Register Now</h2>
         <h3>Please complete this form to the best of your ability.</h3>
         <h5>Q1. Account Set Up</h5>
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" class="form-control" name="username">
+            <input type="text" class="form-control" id="username" name="username">
 
             <label for="email">Email</label>
             <input type="email" class="form-control" name="email">
