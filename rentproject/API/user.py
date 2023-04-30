@@ -40,3 +40,15 @@ def update_user(user_id: str, user_password: str, user_data: User):
         "user_password": hashword.hexdigest(),
         "user_data": json.loads(user_data.json())
     })
+
+
+@router.post("/login")
+def create_user(username: str, password: str):
+    user = get_user(username)
+    if not user:
+        raise HTTPException(status_code=404, detail="Unknown Username")
+    hashword = hashlib.sha256()
+    hashword.update(password.encode())
+    if hashword.hexdigest() != user.password:
+        raise HTTPException(status_code=403, detail="Incorrect Password")
+    return 200
