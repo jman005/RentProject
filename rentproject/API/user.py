@@ -22,7 +22,7 @@ def get_user(user_id: str) -> User:
 def create_user(user_data: User):
     hashword = hashlib.sha256()
     hashword.update(user_data.password.encode())
-    user_data.password = hashword
+    user_data.password = hashword.hexdigest()
     users.insert_one(json.loads(user_data.json()))
 
 @router.post("/update_user")
