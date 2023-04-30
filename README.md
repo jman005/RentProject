@@ -23,7 +23,7 @@
 
 ## Introducing R4R
 
-Rentals 4 Real is a platform which automates the rental search process for you.
+Rentals 4 Real is a platform that automates the housing rental search process.
 
 ## Inspiration
 
