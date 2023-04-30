@@ -1,17 +1,18 @@
 from fastapi import APIRouter
-from rentproject.primitives.location import Property
 import hashlib
 import json
+import os
 from pymongo import MongoClient
-import keyring
 from rentproject.primitives.user import User
+from rentproject.primitives.location import Property
 
 router = APIRouter()
 
-client = MongoClient(keyring.get_password("RentProject", "Mongo"))
+client = MongoClient(os.environ["RentProjectMongo"])
 db = client["main"]
 properties = db["Properties"]
 
 @router.get("/search")
-def search(user_id: int, user_password: str, radius: int) -> list[Property]:
+def search(property: Property) -> list[User]:
+
     pass
