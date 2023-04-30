@@ -31,18 +31,38 @@ We were inspired to create R4R based off our personal experiences and frustratio
 
 ## Key Features
 
-* Live Alerts - Real time house hunting 
-  - Get alerts for properties that you have saved, so you are always on top of the house search!
-*
+* Live SMS Alerts - Real time house hunting 
+  - Get SMS alerts for properties that you have saved, so you are always on top of the house search!
+* Smart recommendations - Find your dream home
+  - Our smart recommendation system will find you the best properties based on your preferences.
+  - You can also filter by price, location, and more!
+  - Save your favourite properties to view later.
+* Easy to use UI
+  - Our simple and intuitive UI makes it easy to find your dream home.
+* Automatic property updates
+  - Our database is updated daily, so you will always have the latest listings and alert you when a new one is posted.
 
 
 ## How To Use
-
-INSERT EXPLANATION
+### Requirements to Run
+- Python 3.10.X
+- Pip
+### Running the Program
+```shell
+# setting up requirements
+pip install -r requirements.txt
+# setting environment variables
+export RentProjectMongo=<your mongo uri>
+# running the program
+uvicorn main:app
+```
 
 ## How It Works
 
-INSERT EXPLANATION
+We are using FastAPI's web framework to create a REST API. The API is connected to a MongoDB database, which stores all the data. The API is hosted on Heroku, and the database is hosted on MongoDB Atlas. The frontend is built using React, and is hosted on Netlify. The frontend is connected to the API using the native fetch API.
+
+### Rest API
+For the complete API documentation please visit [here](https://r4r.tech/docs)
 
 
 ## Sponsors
