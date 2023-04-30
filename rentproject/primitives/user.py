@@ -14,6 +14,7 @@ class User(BaseModel):
     location: Location
     bedrooms: int
     bathrooms: int
+    radius: int
     sqft: int
     accessible: bool
     roommates: bool
