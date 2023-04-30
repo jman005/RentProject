@@ -11,10 +11,11 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="index.html"><img src="logo.png" height="50px" alt=""></a>
+        <a class="logo" href="index.html"><img src="logo.png" height="100px" alt="logo"></a>
             <nav class="nav-bar">
                 <ul class="nav-links">
-                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="signup.html"><button class="button">Login</button></a></li>
+                    <li><a href="signup.html"><button class="button">Sign Up</button></a></li>
                 </ul>
             </nav>
     </header>
@@ -24,15 +25,15 @@
         <h5>Q1. Account Set Up</h5>
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" class="form-control" name="username">
+            <input type="text" class="form-control" name="username" required>
 
             <label for="email">Email</label>
-            <input type="email" class="form-control" name="email">
+            <input type="email" class="form-control" name="email" required>
 
             <label for="password">Password</label>
-            <input type="password" class="form-control" name="password">
+            <input type="password" class="form-control" name="password" required>
             
-            <label for="password">Gender</label>
+            <label for="gender">Gender</label>
             <!-- DROPDOWN FOR GENDER -> 1 FOR MALE, 2 FOR FEMALE, 3 FOR OTHER -->
         </div>
 
@@ -42,57 +43,57 @@
             <!-- DROPDOWN FOR HOUSING TYPE -> SEE DISCORD -->
 
             <label for="cost">cost</label>
-            <input type="number" class="form-control" name="cost">
+            <input type="number" class="form-control" name="cost" required>
 
             <label for="bedrooms">Number of Bedrooms</label>
-            <input type="number" class="form-control" name="bedrooms">
+            <input type="number" class="form-control" name="bedrooms" required>
 
             <label for="bathrooms">Number of Bathrooms</label>
-            <input type="number" class="form-control" name="bathrooms">
+            <input type="number" class="form-control" name="bathrooms" required>
 
             <label for="radius">Geographical Radius</label>
-            <input type="number" class="form-control" name="radius">
+            <input type="number" class="form-control" name="radius" required>
 
             <label for="sqft">Square Footage</label>
-            <input type="number" class="form-control" name="sqft">
+            <input type="number" class="form-control" name="sqft" required>
         </div>
 
         <h5>Q3. Accessibility</h5>
         <div class="form-group">
             <label for="accessible">Accessible</label>
-            <input type="checkbox" class="form-control" name="accessible">
+            <input type="checkbox" class="form-control" name="accessible" required>
 
             <label for="roommates">Roommates</label>
-            <input type="checkbox" class="form-control" name="roommates">
+            <input type="checkbox" class="form-control" name="roommates" required>
 
             <label for="coed">Coed</label>
-            <input type="checkbox" class="form-control" name="coed">
+            <input type="checkbox" class="form-control" name="coed" required>
         </div>
 
         <h5>Q4. Location</h5>
         <div class="form-group">
             <label for="longitude">Longitude</label>
-            <input type="number" class="form-control" name="longitude">
+            <input type="number" class="form-control" name="longitude" required>
 
             <label for="latitude">Latitude</label>
-            <input type="number" class="form-control" name="latitude">
+            <input type="number" class="form-control" name="latitude" required>
 
             <label for="line1">Address Line 1</label>
-            <input type="text" class="form-control" name="line1">
+            <input type="text" class="form-control" name="line1" required>
 
             <label for="postal">Postal Code</label>
-            <input type="text" class="form-control" name="postal">
+            <input type="text" class="form-control" name="postal" required>
 
             <label for="city">City</label>
-            <input type="text" class="form-control" name="city">
+            <input type="text" class="form-control" name="city" required>
 
             <label for="province">Province</label>
-            <input type="text" class="form-control" name="province">
+            <input type="text" class="form-control" name="province" required>
 
             <label for="line2">Address Line 2</label>
-            <input type="text" class="form-control" name="line2">
+            <input type="text" class="form-control" name="line2" required>
         </div>
-        <input type="submit" class="btn btn-success">
+        <input type="submit" class="btn btn-secondary">
     </form>
     <footer>
         <div class="copyright">
