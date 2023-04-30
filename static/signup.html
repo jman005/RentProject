@@ -24,6 +24,9 @@
             obj.radius = parseInt(obj.radius)
             obj.bathrooms = parseInt(obj.bathrooms)
             obj.bedrooms = parseInt(obj.bedrooms)
+            obj.roomates = !!obj.roomates
+            obj.accessible = !!obj.accessible
+            obj.coed = !!obj.coed
             obj.location = {
                 latitude: obj.latitude,
                 longitude: obj.longitude,
@@ -112,19 +115,19 @@
         <h5>Q3. Accessibility</h5>
         <div class="form-group">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" name="accessible" id="accessible">
+              <input class="form-check-input" type="checkbox" value=false name="accessible" id="accessible">
               <label class="form-check-label" for="accessible">
                 Accessible
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" name="roommates" id="roommates">
+              <input class="form-check-input" type="checkbox" value=false name="roommates" id="roommates">
               <label class="form-check-label" for="roommates">
                 Roommates
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" name="coed" id="coed">
+              <input class="form-check-input" type="checkbox" value=false name="coed" id="coed">
               <label class="form-check-label" for="roommates">
                 Coed
               </label>
