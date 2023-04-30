@@ -73,11 +73,18 @@ We would like to extend our gratitude to the sponsors of Deerhacks 2023, for sup
 
 <a href="https://www.domain.com/mlh"><img src="assets/domainlogo.png" alt="Domain.Com" width="200"></a>
 
+<a href="https://mlh.io/"><img src="https://mlh.io/assets/logos/mlh-facebook-ae6144c0a3605f15992ee2970616db8d.jpg" alt="mlh.io" width="200"></a>
+
 
 ## Credits
 
-This website uses the following open source packages:
-
+This website uses the following packages:
+- Python - [Python](https://www.python.org/)
+- FastAPI - [FastAPI](https://fastapi.tiangolo.com/)
+- MongoDB - [MongoDB](https://www.mongodb.com/)
+- Node.js - [Node.js](https://nodejs.org/en/)
+- express - [express](https://expressjs.com/)
+- bootstrap - [bootstrap](https://getbootstrap.com/)
 
 
 ## Team
