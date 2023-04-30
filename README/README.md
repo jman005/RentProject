@@ -70,6 +70,6 @@ This website uses the following open source packages:
     <td align="center">
     <a href="https://github.com/ggggg"><img src="https://github.com/ggggg.png" width="100px;" alt="Ido Ben Haim"/><br /><sub><b>Ido Ben Haim</b></sub></a><br /></td>
     <td align="center">
-    <a href="#]https://github.com/jman005"><img src="https://github.com/jman005.png" width="100px;" alt="Justin Young"/><br /><sub><b>Justin Young</b></sub></a><br /></td>
+    <a href="#https://github.com/jman005"><img src="https://github.com/jman005.png" width="100px;" alt="Justin Young"/><br /><sub><b>Justin Young</b></sub></a><br /></td>
   </tr>
 </table>
