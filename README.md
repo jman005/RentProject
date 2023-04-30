@@ -19,7 +19,7 @@
   <a href="#sponsors">Sponsors</a> •
 </p>
 
-![screenshot](gif.gif)
+![screenshot](assets/gif.gif)
 
 ## Introducing R4R
 
