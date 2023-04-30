@@ -29,6 +29,8 @@ Rentals 4 Real is a platform that automates the housing rental search process.
 
 We were inspired to create R4R based off our personal experiences and frustrations while searching for off-campus housing as university students. 
 
+[![Demo Video](https://img.youtube.com/vi/XS3K1xTzPAk/0.jpg)](https://www.youtube.com/watch?v=XS3K1xTzPAk)
+
 ## Key Features
 
 * Live SMS Alerts - Real time house hunting 
