@@ -13,8 +13,8 @@ class HousingType(Enum):
     ACCOMODATION: 4
 
 class Location(BaseModel):
-    longitude: int = 0.0
-    latitude: int = 0.0
+    longitude: float = 0.0
+    latitude: float = 0.0
     line1: str = ""
     postal: str = ""
     city: str = ""

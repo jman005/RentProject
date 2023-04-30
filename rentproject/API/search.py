@@ -3,7 +3,7 @@ import hashlib
 import json
 import os
 from typing import Annotated
-from pymongo import MongoClient
+from pymongo import MongoClient, GEO2D
 from rentproject.primitives.user import User
 from rentproject.primitives.location import Property
 from rentproject.API.user import get_user
