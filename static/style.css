@@ -146,3 +146,12 @@ i {
     font-size: 30px;
     margin-left: 20px;
 }
+
+section {
+    height: 76vh;
+}
+
+.container2 {
+    text-align: center;
+    padding: 5% 0px;
+}
