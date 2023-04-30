@@ -7,9 +7,10 @@
   <br>
 </h1>
 
-<h4 align="center">The realtor that searches for you. 
+<h4 align="center"> <br>The realtor that searches for you. 
 
 <p align="center">
+  <br>
   <a href="#introducing-r4r">Introduction</a> •
   <a href="#inspiration">Inspiration</a> •
   <a href="#key-features">Key Features</a> •
