@@ -32,9 +32,14 @@
 
             <label for="password">Password</label>
             <input type="password" class="form-control" name="password">
-            
-            <label for="password">Gender</label>
+
+            <label for="gender">Gender</label>
             <!-- DROPDOWN FOR GENDER -> 1 FOR MALE, 2 FOR FEMALE, 3 FOR OTHER -->
+            <select class="form-select" id="gender">
+                <option value="3">Other</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
         </div>
 
         <h5>Q2. Housing Types</h5>
@@ -60,14 +65,24 @@
 
         <h5>Q3. Accessibility</h5>
         <div class="form-group">
-            <label for="accessible">Accessible</label>
-            <input type="checkbox" class="form-control" name="accessible">
-
-            <label for="roommates">Roommates</label>
-            <input type="checkbox" class="form-control" name="roommates">
-
-            <label for="coed">Coed</label>
-            <input type="checkbox" class="form-control" name="coed">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" name="accessible" id="accessible">
+              <label class="form-check-label" for="accessible">
+                Accessible
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" name="roommates" id="roommates">
+              <label class="form-check-label" for="roommates">
+                Roommates
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" name="coed" id="coed">
+              <label class="form-check-label" for="roommates">
+                Coed
+              </label>
+            </div>
         </div>
 
         <h5>Q4. Location</h5>
