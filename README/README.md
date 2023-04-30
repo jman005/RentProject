@@ -64,7 +64,7 @@ This website uses the following open source packages:
 <table>
   <tr>
     <td align="center">
-    <a href="https://github.com/usha-sj"><img src="https://github.com/usha-sj.png" width="100px;" alt="Niti Chaudhary"/><br /><sub><b>Niti Chaudhary</b></sub></a><br /></td>
+    <a href="https://github.com/usha-sj"><img src="https://github.com/usha-sj.png" width="100px;" alt="Usha Sophea Janardhan"/><br /><sub><b>Usha Sophea Janardhan</b></sub></a><br /></td>
     <td align="center">
     <a href="https://github.com/nitic04"><img src="https://github.com/nitic04.png" width="100px;" alt="Niti Chaudhary"/><br /><sub><b>Niti Chaudhary</b></sub></a><br /></td>
     <td align="center">
